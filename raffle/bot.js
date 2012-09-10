@@ -67,10 +67,7 @@ var handleRafflePageDocument = function(cb) {
             uri:    'https://codebits.eu/quiz',
             method: 'GET',
             timeout: 500,
-            headers: {
-                'Cookie':     '_swa_uv=4834276541329755185; _swa_huv=1553478121329755185; _swa_hv=3650183921346837544%7C1346837544427%7Creturning%7Creferral%7C(none)%7Chttps%3A%2F%2Fcodebits.eu%2Fintra%2Fs%2Fuser%2F1702; login=1702%23jdias%23jose.p.dias%40co.sapo.pt%23348f40542acaccd6a83015f880866ec1%231346837551%23474238de7d9cbf6811c4a3a3d303d4d73c1073af',
-                'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.26 Safari/537.4'
-            }
+            headers: HEADERS
         }, function(err, response, body) {
 
         if (err) { return log(err); }
